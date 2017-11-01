@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+.fullwidth {
+  text-align: center;
+}
+
+.fullwidth img, h2, button{
+  max-width: 100%;
+  font-family: 'Playfair Display', serif;
+}
+
+.fullwidth img{
+  text-align: center;
+  align-content: center;
+}
+
+.fullwidth button {
+  font-family: 'Open Sans', sans-serif;
+}
