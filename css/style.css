@@ -17,15 +17,15 @@
   color: white;
   font-size: 7vw;
   text-shadow: 0px 2px 5px #000;
-  top: 7vw;
+  top: 15%;
   left: 50%; /*Placér forankringspunkt i midten*/
   transform: translate(-50%, -50%); /*Sætter forankringspunktet til midten af linjen*/
 }
 
 .fullwidth button {
   position: absolute;
-  top: 30vw;
   left: 50%;
+  top: 40%;
   transform: translate(-50%, -50%); /*Sætter forankringspunktet til midten af linjen*/
   font-family: 'Open Sans', sans-serif;
   font-size: 3vw;
