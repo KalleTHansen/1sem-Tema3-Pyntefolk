@@ -4,11 +4,11 @@
 
 .fullwidth { /*Forsidens øverste billede*/
   text-align: center;
+  position: relative;
 }
 
 .fullwidth img{
   max-width: 100%;
-  position: relative;
 }
 
 .fullwidth h2{
@@ -25,8 +25,32 @@
 .fullwidth button {
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 70%;
   transform: translate(-50%, -50%); /*Sætter forankringspunktet til midten af linjen*/
   font-family: 'Open Sans', sans-serif;
   font-size: 3vw;
+}
+
+.newfurniture {
+  display: flex;
+  justify-content: space-evenly;
+}
+.newfurniture img {
+  height: 20em;
+  float:left;
+  margin: 1%;
+}
+
+.int1, .int2 {
+  position: relative;
+}
+
+.int1 h3 {
+  position: absolute;
+  color: white;
+}
+
+.int2 h3 {
+  position: absolute;
+  color: white;
 }
