@@ -37,7 +37,7 @@
   font-family: 'Playfair Display SC', serif;
 }
 
-@media (min-width: 801px) { /*Fire kolonner >800px*/ 
+@media (min-width: 801px) { /*Fire kolonner >800px*/
 .newfurniture {
   -moz-column-count:    4;
   -webkit-column-count: 4;
@@ -77,4 +77,21 @@
 
 .newfurniture img { /*Billederne "nye møbler"*/
   width: 100%;
+}
+
+/* footer */
+.page-footer {
+  width: auto;
+  height:60px;
+  background-color: black;
+  float: none;
+}
+
+.knap {
+  width: 15%;
+  display: inline;
+  max-width: 200px;
+  margin-left: 8%;
+  margin-right: 5%;
+  text-decoration: none;
 }
