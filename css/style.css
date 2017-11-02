@@ -13,9 +13,9 @@
 
 .fullwidth h2{
   position: absolute; /*Så den kan placeres på billedet*/
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display SC', serif;
   color: white;
-  font-size: 7vw;
+  font-size: 6vw;
   text-shadow: 0px 2px 5px #000;
   top: 15%;
   left: 50%; /*Placér forankringspunkt i midten*/
@@ -31,7 +31,13 @@
   font-size: 3vw;
 }
 
-.newfurniture {}
+@media (min-width: 801px) {
+.newfurniture {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
 
   @media (max-width: 800px) {
     .newfurniture {
@@ -50,7 +56,6 @@
 
 .newfurniture img {
   width: 100%;
-  flex-shrink: 1;
 }
 
 .int1, .int2 {
