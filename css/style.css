@@ -2,16 +2,16 @@
   box-sizing: border-box;
 }
 
-.fullwidth { /*Forsidens øverste billede*/
+.fullwidth { /*Container til forsidens øverste billede*/
   text-align: center;
   position: relative;
 }
 
-.fullwidth img{
+.fullwidth img{ /*forsidens øverste billede*/
   max-width: 100%;
 }
 
-.fullwidth h2{
+.fullwidth h2{ /*Teksten til forsidens øverste billede*/
   position: absolute; /*Så den kan placeres på billedet*/
   font-family: 'Playfair Display SC', serif;
   color: white;
@@ -22,13 +22,14 @@
   transform: translate(-50%, -50%); /*Sætter forankringspunktet til midten af linjen*/
 }
 
-.fullwidth button {
+.fullwidth button { /*Knap på top banner*/
   position: absolute;
   left: 50%;
   top: 70%;
   transform: translate(-50%, -50%); /*Sætter forankringspunktet til midten af linjen*/
   font-family: 'Open Sans', sans-serif;
   font-size: 3vw;
+
 }
 
 #NewFur { /*Nye møbler tekst på forsiden*/
@@ -36,44 +37,44 @@
   font-family: 'Playfair Display SC', serif;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 801px) { /*Fire kolonner >800px*/ 
 .newfurniture {
   -moz-column-count:    4;
   -webkit-column-count: 4;
   column-count:         4;
   }
 
-  .topimg2{
+.topimg2{ /*Smalle top billede*/
   display: none;
   }
 
-.topimg1{
+.topimg1{ /*Brede top billede*/
   display: block;
   }
 }
 
-  @media (max-width: 800px) {
-    .newfurniture {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
-  }
-    .topimg1{
-    display: none;
-    }
-
-  .topimg2{
-    display: block;
-    }
-  }
-  @media (max-width: 400px) {
-    .newfurniture {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-    }
+@media (max-width: 800px) {
+  .newfurniture {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+}
+  .topimg1{
+  display: none;
   }
 
-.newfurniture img {
+.topimg2{
+  display: block;
+  }
+}
+@media (max-width: 400px) {
+  .newfurniture {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+.newfurniture img { /*Billederne "nye møbler"*/
   width: 100%;
 }
